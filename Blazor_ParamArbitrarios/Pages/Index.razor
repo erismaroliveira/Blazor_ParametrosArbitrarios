@@ -1,0 +1,20 @@
+﻿@page "/"
+
+<Home Titulo="Bem-vindo a loja do Erismar"
+    @attributes="MeusParametros"
+    @*src="/imagens/blazor.png" 
+    alt="Meus Produtos" 
+    class="img-fluid" 
+    style="width: 300px"*@>
+</Home>
+
+@code {
+    public Dictionary<string, object> MeusParametros { get; set; } =
+            new Dictionary<string, object>
+            {
+                {"src", "/imagens/blazor.png"},
+                {"alt", "Meus Produtos"},
+                {"height", 300},
+                {"width", 300}
+            };
+}
